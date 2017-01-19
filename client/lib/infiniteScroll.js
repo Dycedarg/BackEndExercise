@@ -1,0 +1,1 @@
+onInfiniteScroll=function(a){function d(a,b){var c,b=b||200;return function(){var d=this,e=arguments;clearTimeout(c),c=setTimeout(function(){a.apply(d,Array.prototype.slice.call(e))},b)}}var b=$(document),c=$(window);c.on("scroll",d(function(d){c.scrollTop()+c.height()==b.height()&&"function"==typeof a&&a()}))}

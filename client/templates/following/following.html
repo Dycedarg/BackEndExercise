@@ -1,0 +1,15 @@
+<template name='following'>
+	<div id="following">
+		<div class="panel panel-default">
+			<div class="panel-heading">Following</div>
+			<div class="panel-body">
+				<label for="" class="label">Users:</label>
+				<div id="followed-users">
+					{{#each users}} {{this}} {{/each}}
+				</div>
+				<label for="" class="label">Tags:</label>
+				<div id="followed-tags">{{#each tags}} {{this}} {{/each}}</div>
+			</div>
+		</div>
+	</div>
+</template>

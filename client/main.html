@@ -1,0 +1,21 @@
+<head>
+  <title>Peerlyst Exercise</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+  <div class="center-container">
+  	<div class="pull-right">{{> loginButtons}}</div>
+  	{{#if loggedIn}}
+	    {{> createPost}}
+	    <br><hr>
+	    {{> feed}}
+	    {{> following}}
+    {{/if}}
+  </div>
+</template>
+
+

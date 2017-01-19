@@ -1,0 +1,10 @@
+<template name='feed'>
+	<label for="">
+		<h3>Feed</h3>
+	</label>
+	{{#each posts}}
+		{{> post post=this}}
+	{{else}}
+		<div class="panel panel-default panel-body">There are no posts to display.</div>
+	{{/each}}
+</template>

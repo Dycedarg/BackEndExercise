@@ -1,0 +1,23 @@
+<template name='createPost'>
+  <div id="create-post-form-container">
+    <form class='form'>
+      <label for="post-content"><h3>New Post</h3></label>
+      <textarea name="content" id="post-content" class="form-control"></textarea><br>
+      <button type='button' id="submit-post" class="btn btn-primary pull-right">Submit</button>
+    </form>
+  </div>
+</template>
+
+<template name='post'>
+	<div class="post-panel post panel panel-default panel-body">
+  {{#with post}}
+		<div><b>{{username}}</b> <span class="pull-right">{{time createdAt}}</span></div>
+		<div>{{content}}</div>
+		<div class='tags label'>
+        {{#each tags}}
+          #{{this}}
+        {{/each}}
+    </div>
+  {{/with}}
+	</div>
+</template>

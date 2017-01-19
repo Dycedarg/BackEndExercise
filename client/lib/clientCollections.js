@@ -1,0 +1,1 @@
+FeedPosts = new Mongo.Collection('FeedPosts');
